@@ -15,9 +15,14 @@
         "extra-watch-webpack-plugin": "^1.0.3",
         "hasbin": "^1.2.3",
         "laravel-mix": "^4.0.0",
+        "laravel-mix-purgecss": "^4.2.0",
         "node-cmd": "^3.0.0",
         "sass": "^1.15.2",
         "sass-loader": "^7.1.0",
+        "vue-template-compiler": "^2.6.11",
         "yargs": "^4.6.0"
+    },
+    "dependencies": {
+        "tailwindcss": "^1.1.4"
     }
 }

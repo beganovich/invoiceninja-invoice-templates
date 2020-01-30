@@ -8,8 +8,6 @@ npm-debug.log
 yarn-error.log
 /build_staging/
 /build_production/
-
-# Optional ignores
-# /source/assets/build/css/
-# /source/assets/build/fonts/
-# /source/assets/build/js/
+/source/assets/build/css/
+/source/assets/build/fonts/
+/source/assets/build/js/
