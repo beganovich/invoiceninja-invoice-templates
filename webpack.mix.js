@@ -19,7 +19,7 @@ mix.js('source/_assets/js/main.js', 'js')
     .options({
         processCssUrls: false,
         postCss: [tailwindcss('./tailwind.config.js')],
-    }).version();
+    });
 
 if (mix.inProduction()) {
     mix.purgeCss({
