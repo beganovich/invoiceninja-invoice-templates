@@ -139,4 +139,8 @@
         </tbody>
     </table>
 </div>
+
+<div class="relative">
+    <div class="absolute p-1 bg-teal-600 bottom-0 w-full"></div>
+</div>
 @endsection
