@@ -26,6 +26,9 @@
     <a href="templates/005">
         <img src="https://www.invoiceninja.com/wp-content/uploads/2015/01/Invoice-208027-Hipster-New-page-001.jpg" alt="005 template" class="w-64 m-3 border">
     </a>    
+    <a href="templates/006">
+        <img src="https://www.invoiceninja.com/wp-content/uploads/2015/01/Invoice-D-085-Photo-New-page-001-1.jpg" alt="006 template" class="w-64 m-3 border">
+    </a>    
 </div>
 
 @endsection
