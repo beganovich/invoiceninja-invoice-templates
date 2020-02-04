@@ -32,6 +32,9 @@
     <a href="templates/007">
         <img src="https://www.invoiceninja.com/wp-content/uploads/2015/01/Invoice-20802-Elegant-New-page-001.jpg" alt="007 template" class="w-64 m-3 border">
     </a>
+    <a href="templates/008">
+        <img src="https://www.invoiceninja.com/wp-content/uploads/2015/01/Invoice-09136-C-Business-new-page-001.jpg" alt="008 template" class="w-64 m-3 border">
+    </a>
 </div>
 
 @endsection
