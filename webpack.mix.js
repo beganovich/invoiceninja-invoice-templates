@@ -25,7 +25,7 @@ if (mix.inProduction()) {
     mix.purgeCss({
         enabled: true,
         globs: [
-            path.join(__dirname, 'source/templates/**/*.blade.php'),
+            path.join(__dirname, 'source/**/*.blade.php'),
         ],
     });
 }
