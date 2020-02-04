@@ -19,4 +19,13 @@
     </a>
 </div>
 
+
+<h2 class="ml-6 mt-5">Pro</h2>
+
+<div class="flex m-3">
+    <a href="templates/005">
+        <img src="https://www.invoiceninja.com/wp-content/uploads/2015/01/Invoice-208027-Hipster-New-page-001.jpg" alt="005 template" class="w-64 m-3 border">
+    </a>    
+</div>
+
 @endsection
