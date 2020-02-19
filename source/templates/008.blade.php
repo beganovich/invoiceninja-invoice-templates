@@ -1,6 +1,14 @@
 @extends('_layouts.master')
 
 @section('body')
+<style>
+    thead th:first-child {
+        border-top-left-radius: 0.5rem;
+    }
+    thead th:last-child {
+        border-top-right-radius: 0.5rem;
+    }
+</style>
 
 <div class="my-16 mx-24">
     <div class="flex justify-between">
@@ -31,7 +39,7 @@
                 <p>demo@invoiceninja.com</p>
             </section>
         </div>
-        <div class="w-1/2 ml-40 bg-orange-600 px-4 py-4 h-auto">
+        <div class="w-1/2 ml-40 bg-orange-600 px-4 py-4 h-auto rounded-lg">
             <div class="flex flex-col text-white">
                 <section class="flex">
                     <span class="w-1/2 mr-3">Invoice Number</span>
@@ -56,53 +64,53 @@
             </div>
         </div>
     </div>
-    <table class="w-full table-auto my-20">
-        <thead class="text-left bg-blue-900 rounded-lg">
+    <table class="w-full table-auto my-20 rounded">
+        <thead class="text-left rounded-t-lg">
             <tr>
-                <th class="font-semibold text-white px-4 py-5">Item</th>
-                <th class="font-semibold text-white px-4 py-2">Description</th>
-                <th class="font-semibold text-white px-4 py-2 text-right">Unit Cost</th>
-                <th class="font-semibold text-white px-4 py-2 text-right">Quantity</th>
-                <th class="font-semibold text-white px-4 py-2 text-right">Line Total</th>
+                <th class="font-semibold text-white px-4 bg-blue-900 py-5">Item</th>
+                <th class="font-semibold text-white px-4 bg-blue-900 py-2">Description</th>
+                <th class="font-semibold text-white px-4 bg-blue-900 py-2 text-right">Unit Cost</th>
+                <th class="font-semibold text-white px-4 bg-blue-900 py-2 text-right">Quantity</th>
+                <th class="font-semibold text-white px-4 bg-blue-900 py-2 text-right">Line Total</th>
             </tr>
         </thead>
         <tbody>
-            <tr class="bg-gray-100">
-                <td ref="item" class="border-4 border-white text-orange-700 px-4 py-4">Painting Service</td>
-                <td ref="description" class="border-4 border-white px-4 py-4">25 hours painting</td>
-                <td ref="unit.cost" class="border-4 border-white text-right px-4 py-4">885.00</td>
-                <td ref="quantity" class="border-4 border-white text-right px-4 py-4">1</td>
-                <td ref="line.total" class="border-4 border-white text-orange-700 text-right px-4 py-4">$885.00</td>
+            <tr>
+                <td ref="item" class="border-4 border-white text-orange-700 px-4 py-4 bg-gray-200">Painting Service</td>
+                <td ref="description" class="border-4 border-white px-4 py-4 bg-gray-200">25 hours painting</td>
+                <td ref="unit.cost" class="border-4 border-white text-right px-4 py-4 bg-gray-200">885.00</td>
+                <td ref="quantity" class="border-4 border-white text-right px-4 py-4 bg-gray-200">1</td>
+                <td ref="line.total" class="border-4 border-white text-orange-700 text-right px-4 py-4 bg-gray-200">$885.00</td>
             </tr>
-            <tr class="bg-gray-200">
-                <td ref="item" class="border-4 border-white text-orange-700 px-4 py-4">Repair Service</td>
-                <td ref="description" class="border-4 border-white px-4 py-4">Sanding and painting dresser</td>
-                <td ref="unit.cost" class="border-4 border-white text-right px-4 py-4">170.00</td>
-                <td ref="quantity" class="border-4 border-white text-right px-4 py-4">1</td>
-                <td ref="line.total" class="border-4 border-white text-orange-700 text-right px-4 py-4">$170.00</td>
+            <tr>
+                <td ref="item" class="border-4 border-white text-orange-700 px-4 py-4 bg-gray-200">Repair Service</td>
+                <td ref="description" class="border-4 border-white px-4 py-4 bg-gray-200">Sanding and painting dresser</td>
+                <td ref="unit.cost" class="border-4 border-white text-right px-4 py-4 bg-gray-200">170.00</td>
+                <td ref="quantity" class="border-4 border-white text-right px-4 py-4 bg-gray-200">1</td>
+                <td ref="line.total" class="border-4 border-white text-orange-700 text-right px-4 py-4 bg-gray-200">$170.00</td>
             </tr>
-            <tr class="bg-gray-100">
-                <td ref="item" class="border-4 border-white text-orange-700 px-4 py-4">Painting Service</td>
-                <td ref="description" class="border-4 border-white px-4 py-4">25 hours painting</td>
-                <td ref="unit.cost" class="border-4 border-white text-right px-4 py-4">885.00</td>
-                <td ref="quantity" class="border-4 border-white text-right px-4 py-4">1</td>
-                <td ref="line.total" class="border-4 border-white text-orange-700 text-right px-4 py-4">$885.00</td>
+            <tr>
+                <td ref="item" class="border-4 border-white text-orange-700 px-4 py-4 bg-gray-200">Painting Service</td>
+                <td ref="description" class="border-4 border-white px-4 py-4 bg-gray-200">25 hours painting</td>
+                <td ref="unit.cost" class="border-4 border-white text-right px-4 py-4 bg-gray-200">885.00</td>
+                <td ref="quantity" class="border-4 border-white text-right px-4 py-4 bg-gray-200">1</td>
+                <td ref="line.total" class="border-4 border-white text-orange-700 text-right px-4 py-4 bg-gray-200">$885.00</td>
             </tr>
-            <tr class="bg-gray-200">
-                <td ref="item" class="border-4 border-white text-orange-700 px-4 py-4">Repair Service</td>
-                <td ref="description" class="border-4 border-white px-4 py-4">Sanding and painting dresser</td>
-                <td ref="unit.cost" class="border-4 border-white text-right px-4 py-4">170.00</td>
-                <td ref="quantity" class="border-4 border-white text-right px-4 py-4">1</td>
-                <td ref="line.total" class="border-4 border-white text-orange-700 text-right px-4 py-4">$170.00</td>
+            <tr>
+                <td ref="item" class="border-4 border-white text-orange-700 px-4 py-4 bg-gray-200">Repair Service</td>
+                <td ref="description" class="border-4 border-white px-4 py-4 bg-gray-200">Sanding and painting dresser</td>
+                <td ref="unit.cost" class="border-4 border-white text-right px-4 py-4 bg-gray-200">170.00</td>
+                <td ref="quantity" class="border-4 border-white text-right px-4 py-4 bg-gray-200">1</td>
+                <td ref="line.total" class="border-4 border-white text-orange-700 text-right px-4 py-4 bg-gray-200">$170.00</td>
             </tr>
-            <tr class="bg-gray-200">
-                <td colspan="3" ref="note" class="px-4 py-4">Passed Car Inspection. Vehicle overall in good condition. <br> Return for tune up for 10 months to 1 year.</td>
-                <td ref="quantity" class="px-4 py-4">
+            <tr>
+                <td colspan="3" ref="note" class="px-4 py-4 rounded-l-lg bg-gray-200">Passed Car Inspection. Vehicle overall in good condition. <br> Return for tune up for 10 months to 1 year.</td>
+                <td ref="quantity" class="px-4 py-4 bg-gray-200">
                     <p>Subtotal</p>
                     <p>Discount 5%</p>
                     <p>Paid to Date</p>
                 </td>
-                <td ref="line.total" class="px-4 py-4 text-right">
+                <td ref="line.total" class="px-4 py-4 text-right rounded-r-lg bg-gray-200">
                     <p>$1,161.00</p>
                     <p>$58.05</p>
                     <p>$0.00</p>
@@ -116,10 +124,10 @@
             </tr>
             <tr>
                 <td colspan="3" ref="terms" class="px-4 py-4"></td>
-                <td ref="terms" class="bg-blue-900 px-4 py-3">
+                <td ref="terms" class="bg-blue-900 px-4 py-3 rounded-l-lg">
                     <span class="text-white">Balance Due</span>
                 </td>
-                <td ref="terms" class="bg-blue-900 px-4 py-3 text-right">
+                <td ref="terms" class="bg-blue-900 px-4 py-3 text-right rounded-r-lg">
                     <span class="text-white">$3,060.00</span>
                 </td>
             </tr>
