@@ -87,32 +87,37 @@
                 <td ref="quantity" class="text-right border-l-2 border-black px-4 py-4">1</td>
                 <td ref="line.total" class="text-right border-l-2 border-black px-4 py-4">$170.00</td>
             </tr>
-            <tr>
-                <td colspan="3" ref="note" class="px-4 py-4">Passed Car Inspection. Vehicle overall in good condition. <br> Return for tune up for 10 months to 1 year.</td>
-                <td ref="quantity" class="px-4 py-4">
-                    <p>Subtotal</p>
-                    <p>Discount 5%</p>
-                    <p>Paid to Date</p>
-                </td>
-                <td ref="line.total" class="border-l-2 border-black px-4 py-4 text-right">
-                    <p>$1,161.00</p>
-                    <p>$58.05</p>
-                    <p>$0.00</p>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="3" ref="terms" class="px-4 py-4">
-                    <p ref="terms" class="font-semibold">Terms</p>
-                    <p>All repairs guaranteed for up to 6 months. Please call us with <br> any questions or concerns regarding repairs or any other issues.</p>
-                </td>
-                <td ref="balance.due" class="px-4 pt-4" style="vertical-align: bottom;">
-                    <span class="font-semibold">Balance Due</span>
-                </td>
-                <td ref="line.total" class="border-l-2 border-black px-4 pt-4 text-right" style="vertical-align: bottom;">
-                    <p class="text-yellow-600 font-semibold">$1,161.00</p>
-                </td>
-            </tr>
         </tbody>
     </table>
+    <div class="flex justify-between mt-8">
+        <div class="w-1/2">
+            <div class="flex flex-col">
+                <p>Wedding photos will be available approximately 1 month after the wedding date. Thank you for your patience!</p>
+                <div class="pt-4">
+                    <p class="font-bold">Terms</p>
+                    <p>Payment must be met within 21 days of the day of service.</p>
+                </div>
+            </div>
+        </div>
+        <div class="w-1/3 flex flex-col">
+            <div class="flex px-3 mt-6">
+                <section class="w-1/2 text-right flex flex-col">
+                    <span>Subtotal</span>
+                    <span>Discount</span>
+                    <span>Paid To Date</span>
+                </section>
+                <section class="w-1/2 text-right flex flex-col">
+                    <span>$0</span>
+                    <span>$0</span>
+                    <span>$0</span>
+                </section>
+            </div>
+            <section class="flex bg-black text-white px-3 mt-1">
+                <p class="w-1/2 text-right">Balance Due</p>
+                <p class="text-right w-1/2">$0.00</p>
+            </section>
+        </div>
+
+    </div>
 </div>
 @endsection

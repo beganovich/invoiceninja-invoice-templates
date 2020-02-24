@@ -2,7 +2,7 @@
 
 @section('body')
 
-<div class="p-16">
+<div class="py-16 px-8">
     <div class="flex justify-center border-b-4 border-black">
         <img src="/assets/images/invoiceninja-logo.png" alt="Company logo" class="w-40 pb-6">
     </div>
@@ -12,22 +12,22 @@
             <h2 class="text-2xl">Balance Due</h2>
             <div class="flex mt-4">
                 <div class="flex flex-col">
-                    <p class="font-semibold">Winterfield Medical Supply</p>
-                    <p>65 Medical Complex Rd., D98</p>
-                    <p>Atlanta, GA 22546</p>
-                    <p>United States</p>
-                    <p>demo@invoiceninja.com</p>
+                    <span class="font-semibold">Winterfield Medical Supply</span>
+                    <span>65 Medical Complex Rd., D98</span>
+                    <span>Atlanta, GA 22546</span>
+                    <span>United States</span>
+                    <span>demo@invoiceninja.com</span>
                 </div>
                 <div class="flex ml-6 pl-4 border-dashed border-l border-black">
                     <div class="flex flex-col">
-                        <p>Ninja Sample</p>
-                        <p>Contact@InvoiceNinja.com</p>
-                        <p>1-800-555-Ninja</p>
+                        <span>Ninja Sample</span>
+                        <span>Contact@InvoiceNinja.com</span>
+                        <span>1-800-555-Ninja</span>
                     </div>
-                    <div class="flex flex-col ml-5">
-                        <p>123 Ninja Blvd.</p>
-                        <p>NinjaLand, 97315</p>
-                        <p>United States</p>
+                    <div class="flex flex-col text ml-5">
+                        <span>123 Ninja Blvd.</span>
+                        <span>NinjaLand, 97315</span>
+                        <span>United States</span>
                     </div>
                 </div>
             </div>

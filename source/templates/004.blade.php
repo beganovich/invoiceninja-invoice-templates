@@ -16,15 +16,15 @@
         <div class="w-1/3 flex flex-col">
             <img src="/assets/images/invoiceninja-logo.png" alt="Company logo" class="w-24">
             <div class="flex px-3 mt-6">
-                <section class="w-1/2">
-                    <p>Invoice Number</p>
-                    <p>Invoice Date</p>
-                    <p>Due Date</p>
+                <section class="w-1/2 flex flex-col">
+                    <span>Invoice Number</span>
+                    <span>Invoice Date</span>
+                    <span>Due Date</span>
                 </section>
-                <section>
-                    <p>D-085</p>
-                    <p>Dec 7, 2015</p>
-                    <p>Jan 28, 2016</p>
+                <section class="flex flex-col">
+                    <span>D-085</span>
+                    <span>Dec 7, 2015</span>
+                    <span>Jan 28, 2016</span>
                 </section>
             </div>
             <section class="flex bg-gray-300 px-3">
@@ -106,15 +106,15 @@
         </div>
         <div class="w-1/3 flex flex-col">
             <div class="flex px-3 mt-6">
-                <section class="w-1/2 text-right">
-                    <p>Subtotal</p>
-                    <p>Discount</p>
-                    <p>Paid To Date</p>
+                <section class="w-1/2 text-right flex flex-col">
+                    <span>Subtotal</span>
+                    <span>Discount</span>
+                    <span>Paid To Date</span>
                 </section>
-                <section class="w-1/2 text-right">
-                    <p>$3,600.00</p>
-                    <p>$540.00</p>
-                    <p>$3,060.00</p>
+                <section class="w-1/2 text-right flex flex-col">
+                    <span>$0</span>
+                    <span>$0</span>
+                    <span>$0</span>
                 </section>
             </div>
             <section class="flex bg-gray-300 px-3 mt-1">
