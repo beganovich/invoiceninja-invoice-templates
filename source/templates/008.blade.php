@@ -5,66 +5,59 @@
     thead th:first-child {
         border-top-left-radius: 0.5rem;
     }
+
     thead th:last-child {
         border-top-right-radius: 0.5rem;
     }
 </style>
 
-<div class="my-16 mx-24">
+<div class="my-16 mx-10">
     <div class="flex justify-between">
         <div class="w-1/2">
-            <img src="/assets/images/invoiceninja-logo.png" alt="Company logo" class="w-40 mt-8">
+            <img src="/assets/images/invoiceninja-logo.png" alt="Company logo" class="w-40">
         </div>
-        <div class="w-1/2 flex justify-end">
+        <div class="flex justify-end">
             <div class="flex flex-col text-gray-600">
-                <p>Ninja Sample</p>
-                <p>Contact@InvoiceNinja.com</p>
-                <p>1-800-555-Ninja</p>
+                <span>Ninja Sample</span>
+                <span>Contact@InvoiceNinja.com</span>
+                <span>1-800-555-Ninja</span>
             </div>
             <div class="flex flex-col text-gray-600 ml-8">
-                <p>123 Ninja Blvd.</p>
-                <p>NinjaLand, 87315</p>
-                <p>United States</p>
+                <span>123 Ninja Blvd.</span>
+                <span>NinjaLand, 87315</span>
+                <span>United States</span>
             </div>
         </div>
     </div>
     <div class="flex items-center justify-between mt-24">
         <div class="w-1/2 flex flex-col">
             <span>Invoice issued to</span>
-            <section class="text-orange-600 mt-2">
-                <p class="font-semibold">Gold & Wong Associates</p>
-                <p>654 Wall Street, 101D</p>
-                <p>New York, New York 11213</p>
-                <p>United States</p>
-                <p>demo@invoiceninja.com</p>
+            <section class="text-orange-600 mt-2 flex flex-col">
+                <span class="font-semibold">Winterfield Medical Supply</span>
+                <span>65 Medical Complex Rd., D98</span>
+                <span>Atlanta, GA 22546</span>
+                <span>United States</span>
+                <span>demo@invoiceninja.com</span>
             </section>
         </div>
-        <div class="w-1/2 ml-40 bg-orange-600 px-4 py-4 h-auto rounded-lg">
-            <div class="flex flex-col text-white">
-                <section class="flex">
-                    <span class="w-1/2 mr-3">Invoice Number</span>
-                    <span class="font-semibold">20802</span>
-                </section>
-                <section class="flex">
-                    <span class="w-1/2 mr-3">PO Number</span>
-                    <span>654B</span>
-                </section>
-                <section class="flex">
-                    <span class="w-1/2 mr-3">Invoice Date</span>
-                    <span>Sep 6, 2014</span>
-                </section>
-                <section class="flex">
-                    <span class="w-1/2 mr-3">Due Date</span>
-                    <span>Sep 6, 2014</span>
-                </section>
-                <section class="flex">
-                    <span class="w-1/2 mr-3">Balance Due</span>
-                    <span>$4,518.00</span>
-                </section>
+        <div class="bg-orange-600 px-4 py-4 h-auto rounded-lg">
+            <div class="w-64 flex justify-between text-white">
+                <div class="flex flex-col mr-5">
+                    <span>Invoice Number</span>
+                    <span>Invoice Date</span>
+                    <span>Due Date</span>
+                    <span>Balance Due</span>
+                </div>
+                <div class="flex flex-col text-right">
+                    <span class="font-semibold" id="invoice.number">00984</span>
+                    <span id="invoice.date">Sep 8, 2014</span>
+                    <span id="due.date">Nov 9, 2014</span>
+                    <span id="balance.due">$1,838.80</span>
+                </div>
             </div>
         </div>
     </div>
-    <table class="w-full table-auto my-20 rounded">
+    <table class="w-full table-auto mt-20 rounded">
         <thead class="text-left rounded-t-lg">
             <tr>
                 <th class="font-semibold text-white px-4 bg-blue-900 py-5">Item</th>
@@ -103,7 +96,7 @@
                 <td ref="quantity" class="border-4 border-white text-right px-4 py-4 bg-gray-200">1</td>
                 <td ref="line.total" class="border-4 border-white text-orange-700 text-right px-4 py-4 bg-gray-200">$170.00</td>
             </tr>
-            <tr>
+            <!-- <tr>
                 <td colspan="3" ref="note" class="px-4 py-4 rounded-l-lg bg-gray-200">Passed Car Inspection. Vehicle overall in good condition. <br> Return for tune up for 10 months to 1 year.</td>
                 <td ref="quantity" class="px-4 py-4 bg-gray-200">
                     <p>Subtotal</p>
@@ -130,9 +123,44 @@
                 <td ref="terms" class="bg-blue-900 px-4 py-3 text-right rounded-r-lg">
                     <span class="text-white">$3,060.00</span>
                 </td>
-            </tr>
+            </tr> -->
         </tbody>
     </table>
+    <div class="flex items-center justify-between px-4 pb-4 bg-gray-200 rounded py-2">
+        <div class="w-1/2">
+            <div class="flex flex-col">
+                <p>Wedding photos will be available approximately 1 month after the wedding date. Thank you for your patience!</p>
+            </div>
+        </div>
+        <div class="w-1/3 flex flex-col">
+            <div class="flex px-3 mt-2">
+                <section class="w-1/2 text-right flex flex-col">
+                    <span>Subtotal</span>
+                    <span>Discount</span>
+                    <span>Paid To Date</span>
+                </section>
+                <section class="w-1/2 text-right flex flex-col">
+                    <span>$0</span>
+                    <span>$0</span>
+                    <span>$0</span>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class="flex items-center justify-between mt-4 pb-4 px-4">
+        <div class="w-1/2">
+            <div class="flex flex-col">
+                <p class="font-semibold">Terms</p>
+                <p>Wedding photos will be available approximately 1 month after the wedding date. Thank you for your patience!</p>
+            </div>
+        </div>
+        <div class="flex w-2/5 flex-col">
+            <section class="flex py-2 bg-blue-900 px-4 py-3 rounded text-white">
+                <p class="w-1/2">Balance Due</p>
+                <p class="text-right w-1/2">$0.00</p>
+            </section>
+        </div>
+    </div>
 </div>
 
 @endsection

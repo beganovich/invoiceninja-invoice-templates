@@ -10,19 +10,23 @@
 </style>
 
 <div class="px-16 py-10">
-    <div class="flex justify-end">
-        <span class="text-orange-700">Invoice NO. D-085</span>
-        <span class="ml-6">Invoice Date: Jan 7, 2015</span>
-    </div>
     <div class="flex items-center justify-between mt-2s">
         <div ref="logo">
             <img src="/assets/images/invoiceninja-logo.png" alt="Company logo" class="w-40">
         </div>
         <div class="flex">
-            <span class="uppercase font-semibold">Payment due: </span>
-            <span class="ml-4">Mar 10, 2015</span>
-            <span class="ml-4 uppercase font-semibold">Amount due:</span>
-            <span class="ml-4 text-orange-700">$3,060.00</span>
+            <div class="flex flex-col mr-5">
+                <span>Invoice Number</span>
+                <span>Invoice Date</span>
+                <span>Due Date</span>
+                <span>Balance Due</span>
+            </div>
+            <div class="flex flex-col text-right">
+                <span class="font-semibold" id="invoice.number">00984</span>
+                <span id="invoice.date">Sep 8, 2014</span>
+                <span id="due.date">Nov 9, 2014</span>
+                <span id="balance.due">$1,838.80</span>
+            </div>
         </div>
     </div>
 </div>
@@ -91,35 +95,52 @@
                 <td ref="quantity" class="text-right px-4 py-4">1</td>
                 <td ref="line.total" class="text-orange-700 text-right px-4 py-4">$170.00</td>
             </tr>
-            <tr class="border-b border-black">
-                <td colspan="3" ref="note" class="px-4 py-4">Passed Car Inspection. Vehicle overall in good condition. <br> Return for tune up for 10 months to 1 year.</td>
-                <td ref="quantity" class="px-4 py-4">
-                    <p>Subtotal</p>
-                    <p>Discount 5%</p>
-                    <p>Paid to Date</p>
-                </td>
-                <td ref="line.total" class="px-4 py-4 text-right">
-                    <p>$1,161.00</p>
-                    <p>$58.05</p>
-                    <p>$0.00</p>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="5" ref="terms" class="px-4 py-4">
-                    <p ref="terms" class="font-semibold">Terms</p>
-                    <p>All repairs guaranteed for up to 6 months. Please call us with <br> any questions or concerns regarding repairs or any other issues.</p>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="3" ref="terms" class="px-4 py-4"></td>
-                <td ref="terms" class="px-4 py-1 bg-orange-700">
-                    <span class="text-white">Balance Due</span>
-                </td>
-                <td ref="terms" class="px-4 py-1 bg-orange-700 text-right">
-                    <span class="text-white">$3,060.00</span>
-                </td>
-            </tr>
         </tbody>
     </table>
+    <div class="flex items-center justify-between mt-2 pb-4 border-b border-black">
+        <div class="w-1/2">
+            <div class="flex flex-col">
+                <p>Wedding photos will be available approximately 1 month after the wedding date. Thank you for your patience!</p>
+            </div>
+        </div>
+        <div class="w-1/3 flex flex-col">
+            <div class="flex px-3 mt-2">
+                <section class="w-1/2 text-right flex flex-col">
+                    <span>Subtotal</span>
+                    <span>Discount</span>
+                    <span>Paid To Date</span>
+                </section>
+                <section class="w-1/2 text-right flex flex-col">
+                    <span>$0</span>
+                    <span>$0</span>
+                    <span>$0</span>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class="flex items-center justify-between mt-4 pb-4">
+        <div class="w-1/2">
+            <div class="flex flex-col">
+                <p class="font-semibold">Terms</p>
+                <p>Wedding photos will be available approximately 1 month after the wedding date. Thank you for your patience!</p>
+            </div>
+        </div>
+        <div class="flex w-2/5 flex-col">
+            <section class="flex bg-orange-700 py-2 text-white px-2 mt-1">
+                <p class="w-1/2">Balance Due</p>
+                <p class="text-right w-1/2">$0.00</p>
+            </section>
+        </div>
+    </div>
 </div>
 @endsection
+<!-- 
+<div class="pt-4">
+    <p class="font-bold">Terms</p>
+    <p>Payment must be met within 21 days of the day of service.</p>
+</div>
+
+<section class="flex bg-orange-700 py-2 text-white px-4 mt-1">
+    <p class="w-1/2">Balance Due</p>
+    <p class="text-right w-1/2">$0.00</p>
+</section> -->

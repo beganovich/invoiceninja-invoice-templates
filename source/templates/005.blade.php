@@ -117,7 +117,6 @@
                 <p class="text-right w-1/2">$0.00</p>
             </section>
         </div>
-
     </div>
 </div>
 @endsection
